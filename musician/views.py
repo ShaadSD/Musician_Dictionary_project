@@ -26,3 +26,4 @@ def delete_musician(request, id):
     musician = models.Musician.objects.get(pk=id) 
     musician.delete()
     return redirect('homepage')
+    

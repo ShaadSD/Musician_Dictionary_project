@@ -39,11 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'album',
     'musician',
+    'Author',
     'crispy_forms',
     'crispy_bootstrap5',
 ]
 CRISPY_ALLOWED_TEMPLATE_PACK='bootstrap5'
 CRISPY_TEMPLATE_PACK='bootstrap5'
+LOGIN_URL = '/Author/login/'
+LOGOUT_REDIRECT_URL="/Author/logout/"
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
